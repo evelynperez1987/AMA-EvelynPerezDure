@@ -15,7 +15,15 @@ body {
   width: 100%;
   padding: 0;
   color: #525252;
+  transition: font-size 0.5s;
 }
+#menu-principal a:hover {
+  font-size: 120%;
+}
+#menu-principal a.activo {
+  color: #fb7a7a;
+}
+
 header {
   background-image: linear-gradient(90deg, #ffcece 50%, #fff8f8);
   padding: 24px 14px 14px 14px;
@@ -39,6 +47,9 @@ header nav li {
 .contenido-index {
   padding: 0 !important;
 }
+.portada-gradiente {
+  background-image: linear-gradient(90deg, white, transparent);
+}
 #foto-portada {
   width: 100%;
   display: block;
@@ -49,6 +60,18 @@ h1, h2 {
 }
 h2 {
   text-decoration: underline;
+}
+#contenido h1 {
+  opacity: 0.1;
+  animation-duration: 2s;
+  animation-delay: .5s;
+  animation-name: animacionh1;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes animacionh1 {
+  0% { opacity: 0.1; }
+  100% { opacity: 1; }
 }
 ul {
   list-style-type: none;
@@ -67,11 +90,12 @@ nav {
 }
 nav li {
   border-bottom: solid 1px #fff8f8;
-  padding: 5px;
+  height: 50px;
 }
 nav a {
   color: black;
   padding: 0 20px;
+  line-height: 50px;
 }
 p {
   text-align: justify;
@@ -107,15 +131,11 @@ input {
 }
 footer {
   background-color: #402f2f;
-  padding: 16px;
+  padding: 30px;
   text-align: center;
   font-size: 16px;
   border-top: 1px solid #8b8b8b;
   color: #9b9b9b;
-}
-
-.texto-copyright {
-  padding-top: 14px;
 }
 
 .flex-contacto {
@@ -130,6 +150,8 @@ footer {
 .img-flex img {
   margin: 10px;
   width: 40%;
+  border-radius: 30px;
+  border: 2px solid rgb(202, 130, 130);
 }
 
 /* Phone Styles */
@@ -147,15 +169,15 @@ footer {
   nav {
     border: 0 none;
   }
-  .texto-copyright {
-    font-size: 10px;
-  }
   .img-flex img {
     width: 80%;
   }
   .nosotras img {
     margin: 20px;
     width: 80%;
+  }
+  .img-flex img {
+    opacity: 1;
   }
 }
 
@@ -167,6 +189,10 @@ footer {
   .nosotras img {
     margin: 20px;
     width: 80%;
+  }
+  .img-flex img {
+    opacity: 1;
+    border: 2px solid rgb(202, 130, 130);
   }
 }
 
@@ -196,5 +222,16 @@ footer {
   .nosotras img {
     width: 24%;
     margin: 20px;
+  }
+  .img-flex img {
+    margin: 10px;
+    width: 40%;
+    transition: 0.5s all;
+    border-radius: 30px;
+    opacity: .8;
+  }
+  .img-flex img:hover {
+    width: 45%;
+    opacity: 1;
   }
 }
