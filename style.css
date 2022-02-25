@@ -37,8 +37,14 @@ header nav li {
   border-bottom: 0 none;
   padding: 0 20px;
 }
+#navbar {
+  padding-top: 20px;
+}
 .logo-image {
   width: 200px;
+  margin: 0 auto 20px auto;
+  display: block;
+
 }
 #contenido {
   color: #484848;
@@ -76,22 +82,31 @@ h2 {
 ul {
   list-style-type: none;
   font-size: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 li {
   font-size: 30px;
   text-align: center;
-  padding: 0 20px;
 }
 a {
   text-decoration: none;
 }
-nav {
+#sidebar {
   background-image: linear-gradient(90deg, #ffcece 50%, #fff8f8);
 }
 nav li {
   border-bottom: solid 1px #fff8f8;
+}
+
+.nav-link.active {
+  background-color: rgba(255,255,255,.5) !important;
+}
+
+ul li {
   height: 50px;
 }
+
 nav a {
   color: black;
   padding: 0 20px;
@@ -169,6 +184,9 @@ footer {
   nav {
     border: 0 none;
   }
+  .submenu-li {
+    display: none;
+  }
   .img-flex img {
     width: 80%;
   }
@@ -190,6 +208,9 @@ footer {
     margin: 20px;
     width: 80%;
   }
+  .submenu-li {
+    display: none;
+  }
   .img-flex img {
     opacity: 1;
     border: 2px solid rgb(202, 130, 130);
@@ -201,14 +222,12 @@ footer {
   #layout-grid {
     display: grid;
     grid-template-areas:
-      "header contenido"
-      "nav contenido"
+      "sidebar contenido"
       "footer footer";
-    grid-template-rows: 200px auto;
     grid-template-columns: 300px auto;
   }
-  header {
-    grid-area: header;
+  #sidebar {
+    grid-area: sidebar;
   }
   footer {
     grid-area: footer;
@@ -216,8 +235,22 @@ footer {
   #contenido {
     grid-area: contenido; 
   }
+  #menu-principal {
+    width: 100%;
+  }
+  #menu-principal, #menu-principal ul {
+    padding: 0;
+  }
+  .submenu-li {
+    display: block;
+    height: auto !important;
+  }
+  .submenu-li a {
+    font-size: 60% !important;
+  }
   nav {
-    grid-area: nav;
+    width: 300px;
+    text-align: center;
   }
   .nosotras img {
     width: 24%;
@@ -229,9 +262,11 @@ footer {
     transition: 0.5s all;
     border-radius: 30px;
     opacity: .8;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0)!important;
   }
   .img-flex img:hover {
     width: 45%;
     opacity: 1;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.75) !important;
   }
 }

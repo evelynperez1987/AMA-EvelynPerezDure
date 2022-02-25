@@ -4,122 +4,168 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="../style.css">
   <title>A.M.A. Design Atelier</title> 
   <link rel="shortcut icon" href="../imagen/favicon.png">
 </head>
 
-<body>
+<body data-bs-spy="scroll">
   <div id="layout-grid">
-    <header>
-      <img class="logo-image" src="../imagen/AMA-logo.png" alt="Logo">
-    </header>
 
-    <nav>
-      <ul id="menu-principal">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a class="activo" href="novias.html">Novias</a></li>
-        <li><a href="quinceaneras.html">Quinceañeras</a></li>
-        <li><a href="otros_servicios.html">Otros Servicios</a></li>
-        <li><a href="sobre_nosotras.html">Sobre Nosotras</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <div id="sidebar">
+      <nav id="navbar" class="sticky-top">
+        <img class="logo-image" src="../imagen/AMA-logo.png" alt="Logo">
+        <ul id="menu-principal">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a class="activo" href="novias.html">Novias</a></li>r
+          <li class="submenu-li">
+              <ul>
+                <li class="nav-item"><a class="nav-link" href="#coleccion1">Colección Amatista</a></li>
+                <li class="nav-item"><a class="nav-link" href="#coleccion2">Colección Arcoíris</a></li>
+                <li class="nav-item"><a class="nav-link" href="#coleccion3">Colección Galáctica</a></li>
+                <li class="nav-item"><a class="nav-link" href="#coleccion4">Colección Boreal</a></li>
+                <li class="nav-item"><a class="nav-link" href="#coleccion5">Colección Mística</a></li>
+              </ul>
+          </li>
+          <li><a href="quinceaneras.html">Quinceañeras</a></li>
+          <li><a href="otros_servicios.html">Otros Servicios</a></li>
+          <li><a href="sobre_nosotras.html">Sobre Nosotras</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <div id="contenido">
-      <h1>Novias</h1>
+    <div id="contenido" data-bs-target="#side-navbar" data-bs-offset="0" tabindex="0">
+      <h1 id="coleccion1">Novias</h1>
       <h2>Colección Amatista:</h2>
       <div class="img-flex">
-        <img src="../imagen/vestido1-1.jpg" alt="vestido1-1">
-        <img src="../imagen/vestido1-2.jpg" alt="vestido1-2">
-        <img src="../imagen/vestido1-3.jpg" alt="vestido1-3">
-        <img src="../imagen/vestido2-1.jpg" alt="vestido2-1">
-        <img src="../imagen/vestido2-2.jpg" alt="vestido2-2">
-        <img src="../imagen/vestido2-3.jpg" alt="vestido2-3">
-        <img src="../imagen/vestido3-1.jpg" alt="vestido3-1">
-        <img src="../imagen/vestido3-2.jpg" alt="vestido3-2">
-        <img src="../imagen/vestido3-3.jpg" alt="vestido3-3">
-        <img src="../imagen/vestido4-1.jpg" alt="vestido4-1">
-        <img src="../imagen/vestido4-2.jpg" alt="vestido4-2">
-        <img src="../imagen/vestido4-3.jpg" alt="vestido4-3">
-        <img src="../imagen/vestido5-1.jpg" alt="vestido5-1">
-        <img src="../imagen/vestido5-2.jpg" alt="vestido5-2">
-        <img src="../imagen/vestido5-3.jpg" alt="vestido5-3">
-        <img src="../imagen/vestido6-1.jpg" alt="vestido6-1">
-        <img src="../imagen/vestido6-2.jpg" alt="vestido6-2">
-        <img src="../imagen/vestido7-1.jpg" alt="vestido7-1">
-        <img src="../imagen/vestido7-2.jpg" alt="vestido7-2">
-        <img src="../imagen/vestido7-3.jpg" alt="vestido7-3">
-        <img src="../imagen/vestido8-1.jpg" alt="vestido8-1">
-        <img src="../imagen/vestido8-2.jpg" alt="vestido8-2">
-        <img src="../imagen/vestido8-3.jpg" alt="vestido8-3">
-        <img src="../imagen/vestido9-1.jpg" alt="vestido9-1">
-        <img src="../imagen/vestido9-2.jpg" alt="vestido9-2">
-        <img src="../imagen/vestido9-3.jpg" alt="vestido9-3">
+        <img src="../imagen/vestido1-1.jpg" alt="vestido1-1" />
+        <img src="../imagen/vestido1-2.jpg" alt="vestido1-2" />
+        <img src="../imagen/vestido1-3.jpg" alt="vestido1-3" />
+        <img src="../imagen/vestido2-1.jpg" alt="vestido2-1" />
+        <img src="../imagen/vestido2-2.jpg" alt="vestido2-2" />
+        <img src="../imagen/vestido2-3.jpg" alt="vestido2-3" />
+        <img src="../imagen/vestido3-1.jpg" alt="vestido3-1" />
+        <img src="../imagen/vestido3-2.jpg" alt="vestido3-2" />
+        <img src="../imagen/vestido3-3.jpg" alt="vestido3-3" />
+        <img src="../imagen/vestido4-1.jpg" alt="vestido4-1" />
+        <img src="../imagen/vestido4-2.jpg" alt="vestido4-2" />
+        <img src="../imagen/vestido4-3.jpg" alt="vestido4-3" />
+        <img src="../imagen/vestido5-1.jpg" alt="vestido5-1" />
+        <img src="../imagen/vestido5-2.jpg" alt="vestido5-2" />
+        <img src="../imagen/vestido5-3.jpg" alt="vestido5-3" />
+        <img src="../imagen/vestido6-1.jpg" alt="vestido6-1" />
+        <img src="../imagen/vestido6-2.jpg" alt="vestido6-2" />
+        <img src="../imagen/vestido7-1.jpg" alt="vestido7-1" />
+        <img src="../imagen/vestido7-2.jpg" alt="vestido7-2" />
+        <img src="../imagen/vestido7-3.jpg" alt="vestido7-3" />
+        <img src="../imagen/vestido8-1.jpg" alt="vestido8-1" />
+        <img src="../imagen/vestido8-2.jpg" alt="vestido8-2" />
+        <img src="../imagen/vestido8-3.jpg" alt="vestido8-3" />
+        <img src="../imagen/vestido9-1.jpg" alt="vestido9-1" />
+        <img src="../imagen/vestido9-2.jpg" alt="vestido9-2" />
+        <img src="../imagen/vestido9-3.jpg" alt="vestido9-3" />
       </div>
 
-      <h2>Colección Arcoíris</h2>
+      <h2 id="coleccion2">Colección Arcoíris</h2>
       <div class="img-flex">
-        <img src="../imagen/vestido10-1.jpg" alt="vestido10-1">
-        <img src="../imagen/vestido10-2.jpg" alt="vestido10-2">
-        <img src="../imagen/vestido11-1.jpg" alt="vestido11-1">
-        <img src="../imagen/vestido11-2.jpg" alt="vestido11-2">
-        <img src="../imagen/vestido11-3.jpg" alt="vestido11-3">
-        <img src="../imagen/vestido12-1.jpg" alt="vestido12-1">
-        <img src="../imagen/vestido12-2.jpg" alt="vestido12-2">
-        <img src="../imagen/vestido12-3.jpg" alt="vestido12-3">
-        <img src="../imagen/vestido13-1.jpg" alt="vestido13-1">
-        <img src="../imagen/vestido13-2.jpg" alt="vestido13-2">
-        <img src="../imagen/vestido14-1.jpg" alt="vestido14-1">
-        <img src="../imagen/vestido14-2.jpg" alt="vestido14-2">
-        <img src="../imagen/vestido14-3.jpg" alt="vestido14-3">
-        <img src="../imagen/vestido15-1.jpg" alt="vestido15-1">
-        <img src="../imagen/vestido15-2.jpg" alt="vestido15-2">
-        <img src="../imagen/vestido16-1.jpg" alt="vestido16-1">
-        <img src="../imagen/vestido16-2.jpg" alt="vestido16-2">
-        <img src="../imagen/vestido16-3.jpg" alt="vestido16-3">
+        <img src="../imagen/vestido10-1.jpg" alt="vestido10-1" />
+        <img src="../imagen/vestido10-2.jpg" alt="vestido10-2" />
+        <img src="../imagen/vestido11-1.jpg" alt="vestido11-1" />
+        <img src="../imagen/vestido11-2.jpg" alt="vestido11-2" />
+        <img src="../imagen/vestido11-3.jpg" alt="vestido11-3" />
+        <img src="../imagen/vestido12-1.jpg" alt="vestido12-1" />
+        <img src="../imagen/vestido12-2.jpg" alt="vestido12-2" />
+        <img src="../imagen/vestido12-3.jpg" alt="vestido12-3" />
+        <img src="../imagen/vestido13-1.jpg" alt="vestido13-1" />
+        <img src="../imagen/vestido13-2.jpg" alt="vestido13-2" />
+        <img src="../imagen/vestido14-1.jpg" alt="vestido14-1" />
+        <img src="../imagen/vestido14-2.jpg" alt="vestido14-2" />
+        <img src="../imagen/vestido14-3.jpg" alt="vestido14-3" />
+        <img src="../imagen/vestido15-1.jpg" alt="vestido15-1" />
+        <img src="../imagen/vestido15-2.jpg" alt="vestido15-2" />
+        <img src="../imagen/vestido16-1.jpg" alt="vestido16-1" />
+        <img src="../imagen/vestido16-2.jpg" alt="vestido16-2" />
+        <img src="../imagen/vestido16-3.jpg" alt="vestido16-3" />
       </div>
 
-      <h2>Colección Galáctica</h2>
+      <h2 id="coleccion3">Colección Galáctica</h2>
       <div class="img-flex">
-        <img src="../imagen/vestido17-1.jpg" alt="vestido17-1">
-        <img src="../imagen/vestido17-2.jpg" alt="vestido17-2">
-        <img src="../imagen/vestido17-3.jpg" alt="vestido17-3">
-        <img src="../imagen/vestido18-1.jpg" alt="vestido18-1">
-        <img src="../imagen/vestido18-2.jpg" alt="vestido18-2">
-        <img src="../imagen/vestido18-3.jpg" alt="vestido18-3">
-        <img src="../imagen/vestido19-1.jpg" alt="vestido19-1">
-        <img src="../imagen/vestido19-2.jpg" alt="vestido19-2">
-        <img src="../imagen/vestido19-3.jpg" alt="vestido19-3">
-        <img src="../imagen/vestido20-1.jpg" alt="vestido20-1">
-        <img src="../imagen/vestido20-2.jpg" alt="vestido20-2">
-        <img src="../imagen/vestido20-3.jpg" alt="vestido20-3">
-        <img src="../imagen/vestido21-1.jpg" alt="vestido21-1">
-        <img src="../imagen/vestido21-2.jpg" alt="vestido21-2">
-        <img src="../imagen/vestido21-3.jpg" alt="vestido21-3">
-        <img src="../imagen/vestido22-1.jpg" alt="vestido22-1">
-        <img src="../imagen/vestido22-2.jpg" alt="vestido22-2">
-        <img src="../imagen/vestido22-3.jpg" alt="vestido22-3">
-        <img src="../imagen/vestido23-1.jpg" alt="vestido23-1">
-        <img src="../imagen/vestido23-2.jpg" alt="vestido23-2">
-        <img src="../imagen/vestido23-3.jpg" alt="vestido23-3">
-        <img src="../imagen/vestido24-1.jpg" alt="vestido24-1">
-        <img src="../imagen/vestido24-2.jpg" alt="vestido24-2">
-        <img src="../imagen/vestido24-3.jpg" alt="vestido24-3">
-        <img src="../imagen/vestido25-1.jpg" alt="vestido25-1">
-        <img src="../imagen/vestido25-2.jpg" alt="vestido25-2">
-        <img src="../imagen/vestido25-3.jpg" alt="vestido25-3">
-        <img src="../imagen/vestido26-1.jpg" alt="vestido26-1">
-        <img src="../imagen/vestido26-2.jpg" alt="vestido26-2">
-        <img src="../imagen/vestido26-3.jpg" alt="vestido26-3">
-        <img src="../imagen/vestido27-1.jpg" alt="vestido27-1">
-        <img src="../imagen/vestido27-2.jpg" alt="vestido27-2">
-        <img src="../imagen/vestido27-3.jpg" alt="vestido27-3">
-        <img src="../imagen/vestido28-1.jpg" alt="vestido28-1">
-        <img src="../imagen/vestido28-2.jpg" alt="vestido28-2">
-        <img src="../imagen/vestido28-3.jpg" alt="vestido28-3">
+        <img src="../imagen/vestido17-1.jpg" alt="vestido17-1" />
+        <img src="../imagen/vestido17-2.jpg" alt="vestido17-2" />
+        <img src="../imagen/vestido17-3.jpg" alt="vestido17-3" />
+        <img src="../imagen/vestido18-1.jpg" alt="vestido18-1" />
+        <img src="../imagen/vestido18-2.jpg" alt="vestido18-2" />
+        <img src="../imagen/vestido18-3.jpg" alt="vestido18-3" />
+        <img src="../imagen/vestido19-1.jpg" alt="vestido19-1" />
+        <img src="../imagen/vestido19-2.jpg" alt="vestido19-2" />
+        <img src="../imagen/vestido19-3.jpg" alt="vestido19-3" />
+        <img src="../imagen/vestido20-1.jpg" alt="vestido20-1" />
+        <img src="../imagen/vestido20-2.jpg" alt="vestido20-2" />
+        <img src="../imagen/vestido20-3.jpg" alt="vestido20-3" />
+        <img src="../imagen/vestido21-1.jpg" alt="vestido21-1" />
+        <img src="../imagen/vestido21-2.jpg" alt="vestido21-2" />
+        <img src="../imagen/vestido21-3.jpg" alt="vestido21-3" />
+        <img src="../imagen/vestido22-1.jpg" alt="vestido22-1" />
+        <img src="../imagen/vestido22-2.jpg" alt="vestido22-2" />
+        <img src="../imagen/vestido22-3.jpg" alt="vestido22-3" />
+        <img src="../imagen/vestido23-1.jpg" alt="vestido23-1" />
+        <img src="../imagen/vestido23-2.jpg" alt="vestido23-2" />
+        <img src="../imagen/vestido23-3.jpg" alt="vestido23-3" />
+        <img src="../imagen/vestido24-1.jpg" alt="vestido24-1" />
+        <img src="../imagen/vestido24-2.jpg" alt="vestido24-2" />
+        <img src="../imagen/vestido24-3.jpg" alt="vestido24-3" />
+        <img src="../imagen/vestido25-1.jpg" alt="vestido25-1" />
+        <img src="../imagen/vestido25-2.jpg" alt="vestido25-2" />
+        <img src="../imagen/vestido25-3.jpg" alt="vestido25-3" />
+        <img src="../imagen/vestido26-1.jpg" alt="vestido26-1" />
+        <img src="../imagen/vestido26-2.jpg" alt="vestido26-2" />
+        <img src="../imagen/vestido26-3.jpg" alt="vestido26-3" />
+        <img src="../imagen/vestido27-1.jpg" alt="vestido27-1" />
+        <img src="../imagen/vestido27-2.jpg" alt="vestido27-2" />
+        <img src="../imagen/vestido27-3.jpg" alt="vestido27-3" />
+        <img src="../imagen/vestido28-1.jpg" alt="vestido28-1" />
+        <img src="../imagen/vestido28-2.jpg" alt="vestido28-2" />
+        <img src="../imagen/vestido28-3.jpg" alt="vestido28-3" />
       </div>
-
+      <h2 id="coleccion4">Colección Boreal</h2>
+      <div class="img-flex">
+        <img src="../imagen/vestido29-1.jpg" alt="vestido29-1" />
+        <img src="../imagen/vestido29-2.jpg" alt="vestido29-2" />
+        <img src="../imagen/vestido29-3.jpg" alt="vestido29-3" />
+        <img src="../imagen/vestido30-1.jpg" alt="vestido30-1" />
+        <img src="../imagen/vestido30-2.jpg" alt="vestido30-2" />
+        <img src="../imagen/vestido30-3.jpg" alt="vestido30-3" />
+        <img src="../imagen/vestido31-1.jpg" alt="vestido31-1" />
+        <img src="../imagen/vestido31-2.jpg" alt="vestido31-2" />
+        <img src="../imagen/vestido32-1.jpg" alt="vestido32-1" />
+        <img src="../imagen/vestido32-2.jpg" alt="vestido32-2" />
+        <img src="../imagen/vestido32-3.jpg" alt="vestido32-3" />
+        <img src="../imagen/vestido33-1.jpg" alt="vestido33-1" />
+        <img src="../imagen/vestido33-2.jpg" alt="vestido33-2" />
+        <img src="../imagen/vestido33-3.jpg" alt="vestido33-3" />
+        <img src="../imagen/vestido34-1.jpg" alt="vestido34-1" />
+        <img src="../imagen/vestido34-2.jpg" alt="vestido34-2" />
+        <img src="../imagen/vestido35-1.jpg" alt="vestido35-1" />
+        <img src="../imagen/vestido35-2.jpg" alt="vestido35-2" />
+        <img src="../imagen/vestido35-3.jpg" alt="vestido35-3" />
+        <img src="../imagen/vestido36-1.jpg" alt="vestido36-1" />
+        <img src="../imagen/vestido36-2.jpg" alt="vestido36-2" />
+        <img src="../imagen/vestido36-3.jpg" alt="vestido36-3" />
+      </div>
+      <h2 id="coleccion5">Colección Mística</h2>
+      <div class="img-flex">
+        <img src="../imagen/vestido37-1.jpg" alt="vestido37-1" />
+        <img src="../imagen/vestido37-2.jpg" alt="vestido37-2" />
+        <img src="../imagen/vestido37-3.jpg" alt="vestido37-3" />
+        <img src="../imagen/vestido38-1.jpg" alt="vestido38-1" />
+        <img src="../imagen/vestido38-2.jpg" alt="vestido38-2" />
+        <img src="../imagen/vestido38-3.jpg" alt="vestido38-3" />
+        <img src="../imagen/vestido39-1.jpg" alt="vestido39-1" />
+        <img src="../imagen/vestido39-2.jpg" alt="vestido39-2" />
+        <img src="../imagen/vestido39-3.jpg" alt="vestido39-3" />
+      </div>
     </div>
     
     <footer>
@@ -127,5 +173,6 @@
     </footer>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
