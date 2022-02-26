@@ -10,72 +10,82 @@
     <link rel="shortcut icon" href="../imagen/favicon.png">
   </head>
 
-  <body>
+  <body data-bs-spy="scroll">
     <div id="layout-grid">
-
+  
       <div id="sidebar">
         <nav id="navbar" class="sticky-top">
           <img class="logo-image" src="../imagen/AMA-logo.png" alt="Logo">
           <ul id="menu-principal">
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="novias.html">Novias</a></li>
+            <li><a href="novias.html">Novias</a></li>r
             <li><a href="quinceaneras.html">Quinceañeras</a></li>
             <li><a class="activo" href="otros_servicios.html">Otros Servicios</a></li>
+            <li class="submenu-li">
+              <ul>
+                <li class="nav-item"><a class="nav-link" href="#clientas1">Novias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#clientas2">Quinceañeras</a></li>
+              </ul>
+          </li>
             <li><a href="sobre_nosotras.html">Sobre Nosotras</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </div>
+  
 
-      <div id="contenido">
+      <div id="contenido" data-bs-target="#side-navbar" data-bs-offset="0" tabindex="0">
         <h1>Otros Servicios</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas malesuada finibus. In id lobortis velit. Sed in mi augue. Praesent at nunc eget ligula tristique feugiat at sed mauris. Ut consectetur dolor lacus, at iaculis mi cursus id. Etiam bibendum felis tortor, ac commodo tellus sagittis nec. Sed a purus id nulla semper semper.          Etiam eget sapien maximus, tincidunt erat at, auctor eros. Phasellus at porttitor orci. Nam tristique auctor tellus semper pretium. Maecenas in gravida velit. Ut volutpat eros nec nisi vehicula, a dignissim elit placerat. Quisque eleifend venenatis luctus. Fusce luctus justo non mattis aliquam. Proin mattis tincidunt ante. Morbi tempus mollis lorem, id venenatis mauris. Cras in risus vel lacus iaculis venenatis. Cras libero eros, sagittis at arcu quis, dapibus congue arcu. Maecenas faucibus nibh lacus, sit amet viverra nibh tincidunt id. Nam suscipit arcu mi, vitae accumsan justo fringilla mattis.
             Donec lobortis sodales urna.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas malesuada finibus. In id lobortis velit. Sed in mi augue. Praesent at nunc eget ligula tristique feugiat at sed mauris. Ut consectetur dolor lacus, at iaculis mi cursus id. Etiam bibendum felis tortor, ac commodo tellus sagittis nec. Sed a purus id nulla semper semper.
             Etiam eget sapien maximus, tincidunt erat at, auctor eros. Phasellus at porttitor orci. Nam tristique auctor tellus semper pretium. Maecenas in gravida velit. Ut volutpat eros nec nisi vehicula, a dignissim elit placerat. Quisque eleifend venenatis luctus. Fusce luctus justo non mattis aliquam. Proin mattis tincidunt ante. Morbi tempus mollis lorem, id venenatis mauris. Cras in risus vel lacus iaculis venenatis. Cras libero eros, sagittis at arcu quis, dapibus congue arcu. Maecenas faucibus nibh lacus, sit amet viverra nibh tincidunt id.</p> 
-        <h2>Novias</h2>
-        <div class="img-flex">
-          <img src="../imagen/clienta1-1.jpg" alt="clienta1-1">
-          <img src="../imagen/clienta1-2.jpg" alt="clienta1-2">
-          <img src="../imagen/clienta1-3.jpg" alt="clienta1-3">
-          <img src="../imagen/clienta2-1.jpg" alt="clienta1-3">
-          <img src="../imagen/clienta3-1.jpg" alt="clienta3.1">
-          <img src="../imagen/clienta4-1.jpg" alt="clienta4-1">
-          <img src="../imagen/clienta5-1.jpg" alt="clienta5-1">
-          <img src="../imagen/clienta6-1.jpg" alt="clienta6-1">
-          <img src="../imagen/clienta6-2.jpg" alt="clienta6-2">
-          <img src="../imagen/clienta7-1.jpg" alt="clienta7-1">
+        <h2 id="clientas1">Novias</h2>
+        <div class="d-flex flex-wrap justify-content-center container g-5">
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta1-1.jpg" alt="clienta1-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta1-2.jpg" alt="clienta1-2"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta1-3.jpg" alt="clienta1-3"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta2-1.jpg" alt="clienta1-3"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta3-1.jpg" alt="clienta3-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta4-1.jpg" alt="clienta4-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta5-1.jpg" alt="clienta5-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta6-1.jpg" alt="clienta6-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta6-2.jpg" alt="clienta6-2"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta7-1.jpg" alt="clienta7-1"></div>
         </div>
-        <h2>Quinceañeras</h2>
-        <div class="img-flex">
-          <img src="../imagen/clienta8-1.jpg" alt="clienta8-1">
-          <img src="../imagen/clienta9-1.jpg" alt="clienta9-1">
-          <img src="../imagen/clienta10-1.jpg" alt="clienta10-1">
-          <img src="../imagen/clienta10-2.jpg" alt="clienta10-2">
-          <img src="../imagen/clienta10-3.jpg" alt="clienta10-3">
-          <img src="../imagen/clienta10-4.jpg" alt="clienta10-4">
-          <img src="../imagen/clienta11-1.jpg" alt="clienta-11-1">
-          <img src="../imagen/clienta12-1.jpg" alt="clienta12-1">
-          <img src="../imagen/clienta12-2.jpg" alt="clienta12-2">
-          <img src="../imagen/clienta12-3.jpg" alt="clienta12-3">
-          <img src="../imagen/clienta13-1.jpg" alt="clienta13-1">
-          <img src="../imagen/clienta13-2.jpg" alt="clienta13-2">
-          <img src="../imagen/clienta13-3.jpg" alt="clienta13-3">
-          <img src="../imagen/clienta13-4.jpg" alt="clienta13-4">
-          <img src="../imagen/clienta13-5.jpg" alt="clienta13-5">
-          <img src="../imagen/clienta14-1.jpg" alt="clienta14-1">
-          <img src="../imagen/clienta14-2.jpg" alt="clienta14-2">
-          <img src="../imagen/clienta14-5.jpg" alt="clienta14-5">
-          <img src="../imagen/clienta14-6.jpg" alt="clienta14-6">
-          <img src="../imagen/clienta15-1.jpg" alt="clienta15-1">
-          <img src="../imagen/clienta16-1.jpg" alt="clienta16-1">
-          <img src="../imagen/clienta17-1.jpg" alt="clienta17-1">
-          <img src="../imagen/clienta18-1.jpg" alt="clienta18-1">
-          <img src="../imagen/clienta18-2.jpg" alt="clienta18-2">
-          <img src="../imagen/clienta18-3.jpg" alt="clienta18-3">
-          <img src="../imagen/clienta18-4.jpg" alt="clienta18-4">
-          <img src="../imagen/clienta19-1.jpg" alt="clienta19-1">
-          <img src="../imagen/clienta22-1.jpg" alt="clienta22-1">
+        
+        <h2 id="clientas2" class="pt-5">Quinceañeras</h2>
+        <div class="d-flex flex-wrap justify-content-center container g-5">
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta8-1.jpg" alt="clienta8-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta9-1.jpg" alt="clienta9-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta11-1.jpg" alt="clienta11-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta12-1.jpg" alt="clienta12-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta10-1.jpg" alt="clienta10-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta10-2.jpg" alt="clienta10-2"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta10-3.jpg" alt="clienta10-3"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta10-4.jpg" alt="clienta10-4"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta12-2.jpg" alt="clienta12-2"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta12-3.jpg" alt="clienta12-3"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta13-1.jpg" alt="clienta13-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta13-2.jpg" alt="clienta13-2"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta13-3.jpg" alt="clienta13-3"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta13-4.jpg" alt="clienta13-4"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta13-5.jpg" alt="clienta13-5"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta14-1.jpg" alt="clienta14-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta14-2.jpg" alt="clienta14-2"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta14-5.jpg" alt="clienta14-5"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta14-6.jpg" alt="clienta14-6"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta15-1.jpg" alt="clienta15-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta16-1.jpg" alt="clienta16-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta17-1.jpg" alt="clienta17-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta19-1.jpg" alt="clienta19-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta22-1.jpg" alt="clienta22-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta18-1.jpg" alt="clienta18-1"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta18-2.jpg" alt="clienta18-2"></div>
+          
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta18-3.jpg" alt="clienta18-3"></div>
+          <div class="col-sm-12 col-lg-6 p-2"><img class="card" src="../imagen/clienta18-4.jpg" alt="clienta18-4"></div>
+          
         </div>
       </div>
 
