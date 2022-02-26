@@ -153,18 +153,11 @@ footer {
   color: #9b9b9b;
 }
 
-.flex-contacto {
-  padding: 54px 0;
+.container img {
+  width: 100%;
 }
-.img-flex, .flex-contacto {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-.img-flex img {
-  margin: 10px;
-  width: 40%;
+
+.card {
   border-radius: 30px;
   border: 2px solid rgb(202, 130, 130);
 }
@@ -187,14 +180,11 @@ footer {
   .submenu-li {
     display: none;
   }
-  .img-flex img {
-    width: 80%;
-  }
   .nosotras img {
     margin: 20px;
     width: 80%;
   }
-  .img-flex img {
+  .container img.card {
     opacity: 1;
   }
 }
@@ -211,7 +201,7 @@ footer {
   .submenu-li {
     display: none;
   }
-  .img-flex img {
+  .container img.card {
     opacity: 1;
     border: 2px solid rgb(202, 130, 130);
   }
@@ -256,17 +246,15 @@ footer {
     width: 24%;
     margin: 20px;
   }
-  .img-flex img {
-    margin: 10px;
-    width: 40%;
+  .container img.card {
     transition: 0.5s all;
     border-radius: 30px;
     opacity: .8;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,0)!important;
   }
-  .img-flex img:hover {
-    width: 45%;
+
+  .container img.card:hover {
     opacity: 1;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.75) !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.75) !important;;
   }
 }
