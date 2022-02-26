@@ -37,9 +37,6 @@ header nav li {
   border-bottom: 0 none;
   padding: 0 20px;
 }
-#navbar {
-  padding-top: 20px;
-}
 .logo-image {
   width: 200px;
   margin: 0 auto 20px auto;
@@ -112,6 +109,9 @@ nav a {
   padding: 0 20px;
   line-height: 50px;
 }
+#navbar {
+  padding: 20px 0 0 0;
+}
 p {
   text-align: justify;
   margin: 0% 10% 5% 10%;
@@ -119,6 +119,9 @@ p {
 }
 .nosotras {
   text-align: center;
+}
+.nosotras img {
+  display: inline-block;
 }
 form {
   padding: 30px 50px;
@@ -256,5 +259,8 @@ footer {
   .container img.card:hover {
     opacity: 1;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.75) !important;;
+  }
+  #navbar {
+    padding: 20px 0 80px 0;
   }
 }
