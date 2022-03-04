@@ -39,9 +39,30 @@ header nav li {
 }
 .logo-image {
   width: 200px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 0 auto;
   display: block;
 
+}
+.marquesina-contenedor {
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+}
+.marquesina {
+  position: absolute;
+  text-align: left;
+  left: 100%;
+  width: 300px;
+  color: #6c6c6c;
+  animation-duration: 8s;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-name: marquesina;
+  animation-iteration-count: infinite;
+}
+@keyframes marquesina {
+  0% { left: 100%; }
+  100% { left: -100%; }
 }
 #contenido {
   color: #484848;
@@ -95,15 +116,12 @@ a {
 nav li {
   border-bottom: solid 1px #fff8f8;
 }
-
 .nav-link.active {
   background-color: rgba(255,255,255,.5) !important;
 }
-
 ul li {
   height: 50px;
 }
-
 nav a {
   color: black;
   padding: 0 20px;
@@ -155,11 +173,9 @@ footer {
   border-top: 1px solid #8b8b8b;
   color: #9b9b9b;
 }
-
 .container img {
   width: 100%;
 }
-
 .card {
   border-radius: 30px;
   border: 2px solid rgb(202, 130, 130);
@@ -255,7 +271,6 @@ footer {
     opacity: .8;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,0)!important;
   }
-
   .container img.card:hover {
     opacity: 1;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.75) !important;;
