@@ -1,0 +1,138 @@
+
+// Colores
+$pink-extra-light: #fff8f8;
+$pink-light: #ffcece;
+$pink: #ca8282;
+$pink-dark: #fb7a7a;
+$gray-light: #6c6c6c;
+$gray: #9b9b9b;
+$gray-dark: #484848;
+$gray-extra-dark: #2f2f2f;
+
+
+// Estios Generales
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: $pink-extra-light;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+h2 {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  li {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+p {
+  text-align: justify;
+  margin: 0% 10% 5% 10%;
+  line-height: 1.5rem;
+}
+a {
+  text-decoration: none;
+}
+.custom-card {
+  border-radius: 10px;
+  border: 2px solid $pink;
+  width: 100%;
+}
+.custom-card2 {
+  border-radius: 10px;
+  border: 2px solid $pink;
+  width: 100%;
+}
+.custom-pt-1 {
+  padding-top: 21px;
+}
+.nosotras {
+  text-align: center;
+}
+.card-descripcion {
+  color: gray;
+  font-size: 12px;
+}
+form {
+  width: 460px;
+  padding: 30px 50px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+label {
+  display: block;
+  color: $gray;
+}
+input {
+  margin-bottom: 10px;
+  width: 250px;
+}
+footer {
+  background-color: $gray-extra-dark;
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+  border-top: 1px solid $gray;
+  color: $gray;
+}
+
+/* Phone Styles */
+@media only screen and (max-width: 599px) {
+  .custom-card {
+    opacity: 1;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 600px) {
+  .logo-image {
+    width: 220px;
+  }
+  .custom-card {
+    opacity: 1;
+    border: 2px solid $pink;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+  #layout-grid {
+    display: grid;
+    grid-template-areas:
+      "sidebar contenido"
+      "footer footer";
+    grid-template-columns: 300px auto;
+  }
+  footer {
+    grid-area: footer;
+  }
+  #contenido {
+    grid-area: contenido; 
+  }
+  .custom-card {
+    transition: 0.5s all;
+    opacity: .8;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0)!important;
+  }
+  .custom-card:hover {
+    opacity: 1;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.75) !important;;
+  }
+}
