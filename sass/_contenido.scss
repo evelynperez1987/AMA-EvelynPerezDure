@@ -1,0 +1,22 @@
+.contenido {
+  color: $gray-dark;
+  padding: 20px 0;
+
+  &-index {
+    padding: 0 !important;
+  }
+
+  h1 {
+    opacity: 0.1;
+    animation-duration: 2s;
+    animation-delay: .5s;
+    animation-name: animacionh1;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes animacionh1 {
+  0% { opacity: 0.1; }
+  100% { opacity: 1; }
+}
