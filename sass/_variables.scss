@@ -1,0 +1,24 @@
+// Breakpoints MAP
+$breakpoints: (
+  medium: 768px,
+  large: 1200px
+);
+
+// Color Variables
+$pink-extra-light: #fff8f8;
+$pink-light: #ffcece;
+$pink: #ca8282;
+$pink-dark: #fb7a7a;
+
+$gray-light: #9b9b9b;
+$gray: #6c6c6c;
+$gray-dark: #484848;
+$gray-extra-dark: #2f2f2f;
+
+// Font Size Variables
+$font-size: 16px;
+
+// Mixins
+@mixin text_align_center {
+  text-align: center;
+}

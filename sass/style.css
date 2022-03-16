@@ -43,7 +43,7 @@ a {
   text-decoration: none;
 }
 
-.custom-card {
+.custom-card, .custom-card2 {
   border-radius: 10px;
   border: 2px solid #ca8282;
   width: 100%;
@@ -108,7 +108,6 @@ footer {
   }
   .custom-card {
     opacity: 1;
-    border: 2px solid #ca8282;
   }
 }
 
