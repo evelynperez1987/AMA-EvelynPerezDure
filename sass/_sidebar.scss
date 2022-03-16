@@ -18,8 +18,8 @@
       position: absolute;
       text-align: left;
       left: 100%;
-      width: 300px;
-      color: $gray-light;
+      width: 100%;
+      color: $gray;
       animation-duration: 8s;
       animation-delay: 1s;
       animation-timing-function: linear;
@@ -42,16 +42,16 @@
         background-color: rgba(255,255,255,.5) !important;
       }
       a {
-        font-size: 30px;
+        font-size: $font-size * 1.5;
         display: inline-block;
         width: 100%;
-        color: $gray-light;
+        color: $gray;
         transition: font-size 0.5s;
         padding: 0 20px;
         line-height: 50px;
     
         &:hover {
-          font-size: 120%;
+          font-size: $font-size * 1.5 * 1.2;
         }
         
         &.activo {
@@ -63,11 +63,9 @@
 }
 
 /* Phone Styles */
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: (map-get($breakpoints, medium)- 1)) {
   #sidebar {
     nav {
-      border: 0 none;
-
       #menu-principal {
         .submenu-li {
           display: none;
@@ -78,9 +76,12 @@
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: map-get($breakpoints, medium)) {
   #sidebar {
     nav {
+      .logo-image {
+        width: 220px;
+      }
       #menu-principal {
         .submenu-li {
           display: none;
@@ -91,13 +92,13 @@
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: map-get($breakpoints, large)) {
   #sidebar {
     grid-area: sidebar;
 
     nav {
-      width: 300px;
-      text-align: center;
+      @include text_align_center;
+      width: 100%;
       padding: 20px 0 80px 0;
 
       #menu-principal {
@@ -114,7 +115,7 @@
           height: auto !important;
 
           a {
-            font-size: 60% !important;
+            font-size: $font-size * 2 * 0.6 !important;
           }
         }
       }
