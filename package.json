@@ -1,7 +1,7 @@
 {
-  "name": "ama-evelynperezdure",
+  "name": "ama_design_atelier",
   "version": "1.0.0",
-  "description": "",
+  "description": "Alquiler y venta de vestidos para novias y quinceañeras. Nos dices como lo quieres y nosotras lo diseñamos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
