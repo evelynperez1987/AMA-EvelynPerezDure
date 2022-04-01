@@ -116,7 +116,8 @@ footer {
   #layout-grid {
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "sidebar contenido" "footer footer";
+        grid-template-areas: "sidebar contenido"
+ "footer footer";
     -ms-grid-columns: 300px auto;
         grid-template-columns: 300px auto;
   }
